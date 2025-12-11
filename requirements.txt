@@ -1,0 +1,9 @@
+sounddevice>=0.4.6
+numpy>=1.24.0
+openai-whisper>=20231117
+google-generativeai>=0.3.0
+pyautogui>=0.9.54
+pvporcupine>=2.2.1  # for hotword detection
+tkinter  # usually comes with Python
+python-sounddevice>=0.4.6
+webrtcvad>=2.0.10  # for voice activity detection

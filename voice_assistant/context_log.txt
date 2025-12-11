@@ -1,0 +1,14 @@
+Project context log
+========================
+- Project structure created with subfolders: audio, stt, nlp, actions, utils.
+- Implemented main assistant loop: hotword detection, record, transcribe, parse, act, repeat.
+- Added placeholder modules for audio recording, STT, NLP, and actions.
+- Implemented real audio recording (sounddevice + VAD) and Whisper transcription (Phase 1 complete).
+- Implemented keyword-based intent parser for open, close, click, right click, scroll up/down.
+- Integrated Gemini LLM as fallback for complex/natural language commands only.
+- Added hotword detection using Porcupine (default keyword: e.g., 'jarvis').
+- Added support for multiple actions per command (if Gemini returns a list).
+- Implemented real click, right click, open, close, and scroll actions using pyautogui and os.system/taskkill.
+- Removed unnecessary delays and OCR-based click logic for optimization.
+- Integrated VAD-based recording: assistant records only while user is speaking, stops after silence, and sends audio to Whisper for STT.
+- Main loop is now highly responsive, with minimal delay and efficient resource usage.
