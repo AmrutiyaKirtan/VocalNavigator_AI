@@ -1,7 +1,7 @@
 import google.generativeai as genai
 
 # Set your Gemini API key here
-GEMINI_API_KEY = "AIzaSyBMa2hRCbDsdqw-Vm7WhJ8xsRgEtrjrRLs"
+GEMINI_API_KEY = "Add your api key here"
 GEMINI_MODEL = "gemini-2.0-flash"
 
 # Centralized intent extraction prompt
